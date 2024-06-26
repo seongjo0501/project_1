@@ -1,0 +1,156 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "username": "john_doe",
+            "password": "password123",
+            "email": "john@example.com",
+            "name": "John Doe",
+            "address": "123 Main St, Anytown, USA"
+        },
+        {
+            "id": 2,
+            "username": "jane_smith",
+            "password": "securepassword",
+            "email": "jane@example.com",
+            "name": "Jane Smith",
+            "address": "456 Oak St, Sometown, USA"
+        },
+        {
+            "id": 3,
+            "username": "mike_jones",
+            "password": "mikepassword",
+            "email": "mike@example.com",
+            "name": "Mike Jones",
+            "address": "789 Pine St, Anothertown, USA"
+        },
+        {
+            "id": 4,
+            "username": "emily_clark",
+            "password": "emilypassword",
+            "email": "emily@example.com",
+            "name": "Emily Clark",
+            "address": "101 Maple St, Exampletown, USA"
+        },
+        {
+            "id": 5,
+            "username": "william_brown",
+            "password": "williampassword",
+            "email": "william@example.com",
+            "name": "William Brown",
+            "address": "202 Birch St, Sampletown, USA"
+        },
+        {
+            "id": 6,
+            "username": "sarah_wilson",
+            "password": "sarahpassword",
+            "email": "sarah@example.com",
+            "name": "Sarah Wilson",
+            "address": "303 Cedar St, Testtown, USA"
+        },
+        {
+            "id": 7,
+            "username": "david_lee",
+            "password": "davidpassword",
+            "email": "david@example.com",
+            "name": "David Lee",
+            "address": "404 Elm St, Practicetown, USA"
+        },
+        {
+            "id": 8,
+            "username": "linda_harris",
+            "password": "lindapassword",
+            "email": "linda@example.com",
+            "name": "Linda Harris",
+            "address": "505 Spruce St, Mocktown, USA"
+        },
+        {
+            "id": 9,
+            "username": "robert_clark",
+            "password": "robertpassword",
+            "email": "robert@example.com",
+            "name": "Robert Clark",
+            "address": "606 Redwood St, Imaginetown, USA"
+        },
+        {
+            "id": 10,
+            "username": "karen_martin",
+            "password": "karenpassword",
+            "email": "karen@example.com",
+            "name": "Karen Martin",
+            "address": "707 Palm St, Faketown, USA"
+        }
+    ],
+    "products": [
+        {
+            "id": 1,
+            "name": "Wireless Mouse",
+            "price": 25.99,
+            "description": "Ergonomic wireless mouse with USB receiver",
+            "category": "Electronics"
+        },
+        {
+            "id": 2,
+            "name": "Bluetooth Headphones",
+            "price": 59.99,
+            "description": "Noise-cancelling over-ear Bluetooth headphones",
+            "category": "Electronics"
+        },
+        {
+            "id": 3,
+            "name": "Smartphone Stand",
+            "price": 9.99,
+            "description": "Adjustable smartphone stand for desk",
+            "category": "Accessories"
+        },
+        {
+            "id": 4,
+            "name": "Laptop Sleeve",
+            "price": 19.99,
+            "description": "Protective laptop sleeve for 13-inch laptops",
+            "category": "Accessories"
+        },
+        {
+            "id": 5,
+            "name": "USB-C Hub",
+            "price": 29.99,
+            "description": "Multi-port USB-C hub with HDMI and USB 3.0",
+            "category": "Electronics"
+        },
+        {
+            "id": 6,
+            "name": "Portable Charger",
+            "price": 34.99,
+            "description": "10000mAh portable charger with fast charging",
+            "category": "Electronics"
+        },
+        {
+            "id": 7,
+            "name": "Mechanical Keyboard",
+            "price": 79.99,
+            "description": "RGB backlit mechanical keyboard with blue switches",
+            "category": "Electronics"
+        },
+        {
+            "id": 8,
+            "name": "Wireless Charger",
+            "price": 18.99,
+            "description": "Qi-certified wireless charger for smartphones",
+            "category": "Electronics"
+        },
+        {
+            "id": 9,
+            "name": "Smart LED Bulb",
+            "price": 14.99,
+            "description": "Smart LED bulb with app control and voice assistant compatibility",
+            "category": "Home"
+        },
+        {
+            "id": 10,
+            "name": "Fitness Tracker",
+            "price": 49.99,
+            "description": "Waterproof fitness tracker with heart rate monitor",
+            "category": "Electronics"
+        }
+    ]
+}
