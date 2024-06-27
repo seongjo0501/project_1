@@ -1,20 +1,22 @@
 import React, { memo, useState, useEffect } from "react";
 import { NavLink, Link } from "react-router-dom";
 import HeaderContainer from "./HeaderContainer";
-import { gnbMouse, gnbClick } from "./HeaderEvent";
+import { gnbMouse, gnbClick, useIsMobile } from "./HeaderEvent";
 
 const Header = memo(() => {
     const [isChecked, setIsChecked] = useState(false);
+    const isMobile = useIsMobile();
+
+    
 
     useEffect(() => {
         const gnbWrap = document.querySelector(".gnb-wrap");
 
-        if (isChecked) {
-            gnbWrap.classList.add("on");
-        } else {
-            gnbWrap.classList.remove("on");
+        if (gnbWrap) {
+            gnbWrap.classList.toggle("on", isChecked);
         }
-    }, [isChecked]);
+
+      }, [isChecked]);
 
     const checkChange = (e) => {
         setIsChecked(e.target.checked);
@@ -31,7 +33,11 @@ const Header = memo(() => {
 
                 <div className="gnb-wrap">
                     <ul id="gnb">
-                        <li onMouseEnter={(e) => gnbMouse(e, true)} onMouseLeave={(e) => gnbMouse(e, false)} onClick={(e) => gnbClick(e, isChecked, setIsChecked)}>
+                        <li 
+                            onMouseEnter={(e) => gnbMouse(e, true, isMobile)}
+                            onMouseLeave={(e) => gnbMouse(e, false, isMobile)}
+                            onClick={(e) => gnbClick(e, setIsChecked)}
+                        >
                             <NavLink to="/about">회사소개</NavLink>
                             <ul className="depth2">
                                 <li>
@@ -42,13 +48,25 @@ const Header = memo(() => {
                                 </li>
                             </ul>
                         </li>
-                        <li onMouseEnter={(e) => gnbMouse(e, true)} onMouseLeave={(e) => gnbMouse(e, false)} onClick={(e) => gnbClick(e, isChecked, setIsChecked)}>
+                        <li 
+                            onMouseEnter={(e) => gnbMouse(e, true, isMobile)}
+                            onMouseLeave={(e) => gnbMouse(e, false, isMobile)}
+                            onClick={(e) => gnbClick(e, setIsChecked)}
+                        >
                             <NavLink to="/product">상품</NavLink>
                         </li>
-                        <li onMouseEnter={(e) => gnbMouse(e, true)} onMouseLeave={(e) => gnbMouse(e, false)} onClick={(e) => gnbClick(e, isChecked, setIsChecked)}>
+                        <li
+                            onMouseEnter={(e) => gnbMouse(e, true, isMobile)}
+                            onMouseLeave={(e) => gnbMouse(e, false, isMobile)}
+                            onClick={(e) => gnbClick(e, setIsChecked)}
+                        >
                             <NavLink to="/notice">공지사항</NavLink>
                         </li>
-                        <li onMouseEnter={(e) => gnbMouse(e, true)} onMouseLeave={(e) => gnbMouse(e, false)} onClick={(e) => gnbClick(e, isChecked, setIsChecked)}>
+                        <li
+                            onMouseEnter={(e) => gnbMouse(e, true, isMobile)}
+                            onMouseLeave={(e) => gnbMouse(e, false, isMobile)}
+                            onClick={(e) => gnbClick(e, setIsChecked)}
+                        >
                             <NavLink to="/board">질문 게시판</NavLink>
                         </li>
                     </ul>
