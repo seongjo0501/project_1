@@ -114,6 +114,8 @@ const HeaderContainer = styled.header`
                 box-shadow: 0 15px 15px rgba(0, 0, 0, 0.15);
                 background-color: #fff;
 
+                transition: max-height 0.4s ease;
+
                 &.on {
                     transition: max-height 0.3s linear;
                 }
