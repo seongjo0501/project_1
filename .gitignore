@@ -34,6 +34,7 @@ build/
 .yarn/unplugged/
 .yarn/build-state.yml
 .yarn/install-state.yml
+.install-state.gz
 
 # 기타 커스텀 무시 파일들
 coverage/
