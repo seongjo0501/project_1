@@ -94,8 +94,6 @@ const index = memo(() => {
     if (productLoading) return; //<p>로딩...</p>;
     if (productError) return; //<p>에러</p>;
 
-    console.log(productData);
-
     return (
         <ProductContainer>
             <div className='product-wrap'>
