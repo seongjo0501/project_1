@@ -64,10 +64,12 @@ const MainBest = memo(({ data }) => {
             <h2>WEEKLY BEST</h2>
             <ul>
                 {data &&
-                    data.map(v => (
-                        <li key={v.id}>
+                    data
+                        .filter(v => v.isBest)
+                        .map(v => (
+                            <li key={v.id}>
                             <Link 
-                                to={`/main/view?id=${v.id}`}
+                                to={`/product/viewBest?id=${v.id}`}
                             >
                                 <div className='thumb'>
                                     <img src={v.thumb} alt={v.name} />
