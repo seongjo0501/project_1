@@ -5,7 +5,7 @@ import reset from "styled-reset";
 const GlobalStyles = createGlobalStyle`
     ${reset}
     
-    body {
+    html,body {
         line-height: 1.3;
         font-weight: normal;
         font-family: "Roboto","Noto Sans KR", sans-serif;

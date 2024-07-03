@@ -82,7 +82,6 @@
         }
     ],
     "products": [
-        
         {
             "id": 1,
             "name": "op15777 (MADE/S~M/머메이드추가♥) 올리비아 리본 장식 하트넥 오간자 롱 원피스",
@@ -119,7 +118,7 @@
             "star": "4.2",
             "isBest": false
         },
-        
+
         {
             "id": 5,
             "name": "ps4839 (쿨링원단/이염X) Day Jeans No.56 데이진 논페이드 A라인 썸머 쿨 숏 팬츠",
@@ -155,7 +154,7 @@
             "view": "/images/main/best/best_02_view.jpg",
             "star": "4.5",
             "isBest": true
-        },
+        }
     ],
     "notice": [
         {
