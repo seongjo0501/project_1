@@ -2,7 +2,10 @@ import React, { memo } from 'react';
 import styled from 'styled-components';
 import mq from '../../MediaQuery';
 
-const FooterContainer = styled.div`
+const FooterContainer = styled.footer`
+    margin-top: 16px;
+    border-top: 1px solid #ededed;
+
     .footer-wrap {
         max-width: 1520px;
         margin: 0 auto;
