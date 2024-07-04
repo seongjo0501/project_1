@@ -177,7 +177,7 @@ const View = memo(() => {
     if (bestItemError) return; //<p>에러</p>;
 
     // id에 해당하는 아이템을 찾음
-    const item = bestItemData.find(d => d.id === id);
+    const item = bestItemData.find(d => d.id == id);
 
     return (
         <ViewContainer>

@@ -169,7 +169,7 @@ const View = memo(() => {
     if (productError) return //<p>에러 발생: {productError.message}</p>;
 
     // id에 해당하는 아이템을 찾음
-    const item = productData.find(d => d.id === id);
+    const item = productData.find(d => d.id == id);
 
     const more = (e)=>{
         const target = e.target;

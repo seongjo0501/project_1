@@ -11079,6 +11079,7 @@ __metadata:
     styled-components: "npm:^6.1.11"
     styled-components-breakpoints: "npm:^1.1.1"
     styled-reset: "npm:^4.5.2"
+    swiper: "npm:^11.1.4"
     web-vitals: "npm:^2.1.0"
   languageName: unknown
   linkType: soft
@@ -12859,6 +12860,13 @@ __metadata:
   bin:
     svgo: bin/svgo
   checksum: 10c0/0741f5d5cad63111a90a0ce7a1a5a9013f6d293e871b75efe39addb57f29a263e45294e485a4d2ff9cc260a5d142c8b5937b2234b4ef05efdd2706fb2d360ecc
+  languageName: node
+  linkType: hard
+
+"swiper@npm:^11.1.4":
+  version: 11.1.4
+  resolution: "swiper@npm:11.1.4"
+  checksum: 10c0/a1e4b87f414f67f5da6a07b33d5ee20e54062d21f8bed88195d5d56decff6afddf683e130118b7fa12668de221f794ae63f6c073761b683a4b90bbd5eb585202
   languageName: node
   linkType: hard
 

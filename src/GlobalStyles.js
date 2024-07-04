@@ -11,6 +11,7 @@ const GlobalStyles = createGlobalStyle`
         font-family: "Roboto","Noto Sans KR", sans-serif;
         font-size: 18px;
         color: #333;
+        overflow-x: hidden;
 
         ${mq.maxWidth('tablet')`
             font-size: 16px;

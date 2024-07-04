@@ -3,6 +3,8 @@ import mq from '../../MediaQuery';
 
 const HeaderContainer = styled.header`
     box-shadow: 0 0px 15px rgba(0 0 0 / 15%);
+    position: relative;
+    z-index: 100;
 
     .header-wrap {
         position: relative;
