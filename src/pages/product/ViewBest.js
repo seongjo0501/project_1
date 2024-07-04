@@ -165,8 +165,8 @@ const View = memo(() => {
 
     const [{ data: productData, loading: productLoading, error: productError }] = useAxios('http://localhost:3001/products');
 
-    if (productLoading) return <p>로딩 중...</p>;
-    if (productError) return <p>에러 발생: {productError.message}</p>;
+    if (productLoading) return //<p>로딩 중...</p>;
+    if (productError) return //<p>에러 발생: {productError.message}</p>;
 
     // id에 해당하는 아이템을 찾음
     const item = productData.find(d => d.id === id);
