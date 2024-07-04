@@ -99,16 +99,61 @@ const ViewContainer = styled.div`
     }
 
     .detail {
+        position: relative;
         padding-top: 30px;
+
+        height: 300px;
+        overflow: hidden;
 
         ${mq.maxWidth('tablet')`
             padding-top: 50px;
         `}
 
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 120px;
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0), white);
+        }
+
+        &.on {
+            &::before {
+                display: none;
+            }
+        }
+
         img {
-            display:block;
+            display: block;
             max-width: 100%;
             margin: 0 auto;
+        }
+
+        .more {
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            z-index: 10;
+            transform: translateX(-50%);
+
+            width: 200px;
+            padding: 15px 30px;
+            border: 1px solid rgb(49, 130, 246);
+            border-radius: 35px;
+            background-color: #fff;
+            text-align: center;
+
+            font-weight: 500;
+            color: rgb(49, 130, 246);
+
+            cursor: pointer;
+
+            ${mq.maxWidth('tablet')`
+                width: 150px;
+                padding: 10px 20px;
+            `};
         }
     }
 `;
@@ -124,7 +169,16 @@ const View = memo(() => {
     if (productError) return <p>에러 발생: {productError.message}</p>;
 
     // id에 해당하는 아이템을 찾음
-    const item = productData.find(d => d.id === parseInt(id));
+    const item = productData.find(d => d.id === id);
+
+    const more = (e)=>{
+        const target = e.target;
+        const detail = target.closest('.detail');
+
+        target.style.display = 'none';
+        detail.style.height = 'auto';
+        detail.classList.add('on');
+    };
 
     return (
         <ViewContainer>
@@ -144,6 +198,7 @@ const View = memo(() => {
             <h3>제품 상세</h3>
             <div className='detail'>
                 <img src={item.view} />
+                <span className='more' onClick={(e)=>{more(e)}}>상세정보 펼쳐보기</span>
             </div>
         </ViewContainer>
     );
