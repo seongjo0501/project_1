@@ -12,6 +12,7 @@ import Board from "./pages/board";
 import Sign from './pages/sign';
 import Login from './pages/login';
 import Mypage from './pages/user';
+import Profile from './pages/user/Profile';
 import Basket from './pages/user/Basket';
 import ViewBest from "./pages/product/ViewBest";
 import ViewProduct from "./pages/product/ViewProduct";
@@ -40,6 +41,7 @@ const App = memo(() => {
                 <Route path="/login" element={<Login />} />
                 <Route path="/user" element={<Mypage />} />
                 <Route path="/user/basket" element={<Basket />} />
+                <Route path="/user/profile" element={<Profile />} />
             </Routes>
 
             <Footer/>

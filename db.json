@@ -1,218 +1,153 @@
 {
-    "users": [
-        {
-            "id": 1,
-            "username": "john_doe",
-            "password": "password123",
-            "email": "john@example.com",
-            "name": "John Doe",
-            "address": "123 Main St, Anytown, USA"
-        },
-        {
-            "id": 2,
-            "username": "jane_smith",
-            "password": "securepassword",
-            "email": "jane@example.com",
-            "name": "Jane Smith",
-            "address": "456 Oak St, Sometown, USA"
-        },
-        {
-            "id": 3,
-            "username": "mike_jones",
-            "password": "mikepassword",
-            "email": "mike@example.com",
-            "name": "Mike Jones",
-            "address": "789 Pine St, Anothertown, USA"
-        },
-        {
-            "id": 4,
-            "username": "emily_clark",
-            "password": "emilypassword",
-            "email": "emily@example.com",
-            "name": "Emily Clark",
-            "address": "101 Maple St, Exampletown, USA"
-        },
-        {
-            "id": 5,
-            "username": "william_brown",
-            "password": "williampassword",
-            "email": "william@example.com",
-            "name": "William Brown",
-            "address": "202 Birch St, Sampletown, USA"
-        },
-        {
-            "id": 6,
-            "username": "sarah_wilson",
-            "password": "sarahpassword",
-            "email": "sarah@example.com",
-            "name": "Sarah Wilson",
-            "address": "303 Cedar St, Testtown, USA"
-        },
-        {
-            "id": 7,
-            "username": "david_lee",
-            "password": "davidpassword",
-            "email": "david@example.com",
-            "name": "David Lee",
-            "address": "404 Elm St, Practicetown, USA"
-        },
-        {
-            "id": 8,
-            "username": "linda_harris",
-            "password": "lindapassword",
-            "email": "linda@example.com",
-            "name": "Linda Harris",
-            "address": "505 Spruce St, Mocktown, USA"
-        },
-        {
-            "id": 9,
-            "username": "robert_clark",
-            "password": "robertpassword",
-            "email": "robert@example.com",
-            "name": "Robert Clark",
-            "address": "606 Redwood St, Imaginetown, USA"
-        },
-        {
-            "id": 10,
-            "username": "karen_martin",
-            "password": "karenpassword",
-            "email": "karen@example.com",
-            "name": "Karen Martin",
-            "address": "707 Palm St, Faketown, USA"
-        }
-    ],
-    "products": [
-        {
-            "id": 1,
-            "name": "op15777 (MADE/S~M/머메이드추가♥) 올리비아 리본 장식 하트넥 오간자 롱 원피스",
-            "price": 67410,
-            "thumb": "/images/main/best/best_04.gif",
-            "view": "/images/main/best/best_04_view.jpg",
-            "star": "4.2",
-            "isBest": true
-        },
-        {
-            "id": 2,
-            "name": "op15793 데이즐 스트라이프 스퀘어넥 백리본 셔링 A라인 롱 반팔 원피스",
-            "price": 41760,
-            "thumb": "/images/main/product/product_01.gif",
-            "view": "/images/main/product/product_01_view.jpg",
-            "star": "4",
-            "isBest": false
-        },
-        {
-            "id": 3,
-            "name": "bs7967 (2가지디자인/세트가능) 페리드 썸머 코튼 스퀘어넥 나시 블라우스",
-            "price": 33300,
-            "thumb": "/images/main/product/product_02.gif",
-            "view": "/images/main/product/product_02_view.jpg",
-            "star": "4.2",
-            "isBest": false
-        },
-        {
-            "id": 4,
-            "name": "op15795 헬린 보트넥 셔링 슬리브리스 롱 원피스",
-            "price": 64000,
-            "thumb": "/images/main/product/product_03.gif",
-            "view": "/images/main/product/product_03_view.jpg",
-            "star": "4.2",
-            "isBest": false
-        },
-
-        {
-            "id": 5,
-            "name": "ps4839 (쿨링원단/이염X) Day Jeans No.56 데이진 논페이드 A라인 썸머 쿨 숏 팬츠",
-            "price": 28800,
-            "thumb": "/images/main/best/best_03.gif",
-            "view": "/images/main/best/best_03_view.jpg",
-            "star": "4.7",
-            "isBest": true
-        },
-        {
-            "id": 6,
-            "name": "op15723 (MADE/휴양지룩/발레코어룩♥) 샤모니 플라워 배색 리본 끈 나시 플레어 미니 원피스",
-            "price": 63000,
-            "thumb": "/images/main/product/product_04.gif",
-            "view": "/images/main/product/product_04_view.jpg",
-            "star": "4.2",
-            "isBest": false
-        },
-        {
-            "id": 7,
-            "name": "st2620 (휴양지룩/여행룩/인생컷보장♥) 르주아 가디건 뷔스티에 플라워 롱 원피스 세트",
-            "price": 35820,
-            "thumb": "/images/main/best/best_01.gif",
-            "view": "/images/main/best/best_01_view.jpg",
-            "star": "5",
-            "isBest": true
-        },
-        {
-            "id": 8,
-            "name": "bs7937 (부유방커버O/러블리끝판왕) 젤린 스모크 밴딩 청 뷔스티에 블라우스",
-            "price": 17190,
-            "thumb": "/images/main/best/best_02.gif",
-            "view": "/images/main/best/best_02_view.jpg",
-            "star": "4.5",
-            "isBest": true
-        }
-    ],
-    "notice": [
-        {
-            "id": 1,
-            "title": "New Store Opening",
-            "content": "We are excited to announce the opening of our new store.",
-            "date": "2024-06-01"
-        },
-        {
-            "id": 2,
-            "title": "Holiday Sale",
-            "content": "Don't miss our special holiday sale with up to 50% off.",
-            "date": "2024-06-10"
-        },
-        {
-            "id": 3,
-            "title": "New Product Launch",
-            "content": "Introducing our latest product lineup. Check it out now.",
-            "date": "2024-06-15"
-        },
-        {
-            "id": 4,
-            "title": "Maintenance Notice",
-            "content": "Our website will be undergoing maintenance on June 20.",
-            "date": "2024-06-20"
-        },
-        {
-            "id": 5,
-            "title": "Customer Survey",
-            "content": "We value your feedback. Please take our customer survey.",
-            "date": "2024-06-25"
-        }
-    ],
-    "review": [
-        {
-            "id": 1,
-            "content": "Great product, highly recommend!",
-            "rating": 5
-        },
-        {
-            "id": 2,
-            "content": "Good value for the price.",
-            "rating": 4
-        },
-        {
-            "id": 3,
-            "content": "Average quality, could be better.",
-            "rating": 3
-        },
-        {
-            "id": 4,
-            "content": "Not satisfied with the performance.",
-            "rating": 2
-        },
-        {
-            "id": 5,
-            "content": "Terrible product, do not buy.",
-            "rating": 1
-        }
-    ]
+  "users": [
+    {
+      "id": "1",
+      "username": "admin1",
+      "password": "admin1",
+      "email": "admin1@example.com",
+      "name": "admin1",
+      "address": "admin1"
+    },
+    {
+        "id": "2",
+        "username": "admin2",
+        "password": "admin2",
+        "email": "admin2@example.com",
+        "name": "admin2",
+        "address": "admin2"
+      }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "op15777 (MADE/S~M/머메이드추가♥) 올리비아 리본 장식 하트넥 오간자 롱 원피스",
+      "price": 67410,
+      "thumb": "/images/main/best/best_04.gif",
+      "view": "/images/main/best/best_04_view.jpg",
+      "star": "4.2",
+      "isBest": true
+    },
+    {
+      "id": "2",
+      "name": "op15793 데이즐 스트라이프 스퀘어넥 백리본 셔링 A라인 롱 반팔 원피스",
+      "price": 41760,
+      "thumb": "/images/main/product/product_01.gif",
+      "view": "/images/main/product/product_01_view.jpg",
+      "star": "4",
+      "isBest": false
+    },
+    {
+      "id": "3",
+      "name": "bs7967 (2가지디자인/세트가능) 페리드 썸머 코튼 스퀘어넥 나시 블라우스",
+      "price": 33300,
+      "thumb": "/images/main/product/product_02.gif",
+      "view": "/images/main/product/product_02_view.jpg",
+      "star": "4.2",
+      "isBest": false
+    },
+    {
+      "id": "4",
+      "name": "op15795 헬린 보트넥 셔링 슬리브리스 롱 원피스",
+      "price": 64000,
+      "thumb": "/images/main/product/product_03.gif",
+      "view": "/images/main/product/product_03_view.jpg",
+      "star": "4.2",
+      "isBest": false
+    },
+    {
+      "id": "5",
+      "name": "ps4839 (쿨링원단/이염X) Day Jeans No.56 데이진 논페이드 A라인 썸머 쿨 숏 팬츠",
+      "price": 28800,
+      "thumb": "/images/main/best/best_03.gif",
+      "view": "/images/main/best/best_03_view.jpg",
+      "star": "4.7",
+      "isBest": true
+    },
+    {
+      "id": "6",
+      "name": "op15723 (MADE/휴양지룩/발레코어룩♥) 샤모니 플라워 배색 리본 끈 나시 플레어 미니 원피스",
+      "price": 63000,
+      "thumb": "/images/main/product/product_04.gif",
+      "view": "/images/main/product/product_04_view.jpg",
+      "star": "4.2",
+      "isBest": false
+    },
+    {
+      "id": "7",
+      "name": "st2620 (휴양지룩/여행룩/인생컷보장♥) 르주아 가디건 뷔스티에 플라워 롱 원피스 세트",
+      "price": 35820,
+      "thumb": "/images/main/best/best_01.gif",
+      "view": "/images/main/best/best_01_view.jpg",
+      "star": "5",
+      "isBest": true
+    },
+    {
+      "id": "8",
+      "name": "bs7937 (부유방커버O/러블리끝판왕) 젤린 스모크 밴딩 청 뷔스티에 블라우스",
+      "price": 17190,
+      "thumb": "/images/main/best/best_02.gif",
+      "view": "/images/main/best/best_02_view.jpg",
+      "star": "4.5",
+      "isBest": true
+    }
+  ],
+  "notice": [
+    {
+      "id": "1",
+      "title": "New Store Opening",
+      "content": "We are excited to announce the opening of our new store.",
+      "date": "2024-06-01"
+    },
+    {
+      "id": "2",
+      "title": "Holiday Sale",
+      "content": "Don't miss our special holiday sale with up to 50% off.",
+      "date": "2024-06-10"
+    },
+    {
+      "id": "3",
+      "title": "New Product Launch",
+      "content": "Introducing our latest product lineup. Check it out now.",
+      "date": "2024-06-15"
+    },
+    {
+      "id": "4",
+      "title": "Maintenance Notice",
+      "content": "Our website will be undergoing maintenance on June 20.",
+      "date": "2024-06-20"
+    },
+    {
+      "id": "5",
+      "title": "Customer Survey",
+      "content": "We value your feedback. Please take our customer survey.",
+      "date": "2024-06-25"
+    }
+  ],
+  "review": [
+    {
+      "id": "1",
+      "content": "Great product, highly recommend!",
+      "rating": 5
+    },
+    {
+      "id": "2",
+      "content": "Good value for the price.",
+      "rating": 4
+    },
+    {
+      "id": "3",
+      "content": "Average quality, could be better.",
+      "rating": 3
+    },
+    {
+      "id": "4",
+      "content": "Not satisfied with the performance.",
+      "rating": 2
+    },
+    {
+      "id": "5",
+      "content": "Terrible product, do not buy.",
+      "rating": 1
+    }
+  ]
 }

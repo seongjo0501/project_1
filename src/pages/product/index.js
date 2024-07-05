@@ -71,7 +71,7 @@ const ProductContainer = styled.div`
             }
 
             .best {
-                padding-left: 10px;
+                display: block;
                 color: rgb(49, 130, 246);
                 font-size: 0.875rem;
                 font-weight:500;

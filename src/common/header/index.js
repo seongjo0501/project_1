@@ -1,13 +1,15 @@
+// src/common/header/index.js
 import React, { memo, useState, useEffect } from "react";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink, Link, useNavigate } from "react-router-dom";
 import HeaderContainer from "./HeaderContainer";
 import { gnbMouse, gnbClick, useIsMobile } from "./HeaderEvent";
+import { useUser } from "./UserContext"; // UserContext를 불러옴
 
 const Header = memo(() => {
     const [isChecked, setIsChecked] = useState(false);
     const isMobile = useIsMobile();
-
-    
+    const { user, logout } = useUser(); // user와 logout 함수를 가져옴
+    const navigate = useNavigate();
 
     useEffect(() => {
         const gnbWrap = document.querySelector(".gnb-wrap");
@@ -16,10 +18,15 @@ const Header = memo(() => {
             gnbWrap.classList.toggle("on", isChecked);
         }
 
-      }, [isChecked]);
+    }, [isChecked]);
 
     const checkChange = (e) => {
         setIsChecked(e.target.checked);
+    };
+
+    const handleLogout = () => {
+        logout();
+        navigate('/');
     };
 
     return (
@@ -72,15 +79,25 @@ const Header = memo(() => {
                     </ul>
 
                     <ul className="utils">
-                        <li>
-                            <NavLink to="/login">로그인</NavLink>
-                        </li>
-                        <li>
-                            <NavLink to="/sign">회원가입</NavLink>
-                        </li>
-                        {/* <li>
-                            <NavLink to='/user/basket'>장바구니</NavLink>
-                        </li> */}
+                        {user ? (
+                            <>
+                                <li>
+                                    <NavLink to="/user/profile">내 정보</NavLink>
+                                </li>
+                                <li>
+                                    <button onClick={handleLogout}>로그아웃</button>
+                                </li>
+                            </>
+                        ) : (
+                            <>
+                                <li>
+                                    <NavLink to="/login">로그인</NavLink>
+                                </li>
+                                <li>
+                                    <NavLink to="/sign">회원가입</NavLink>
+                                </li>
+                            </>
+                        )}
                     </ul>
                 </div>
 

@@ -11,6 +11,7 @@
     "axios-hooks": "^5.0.2",
     "chart.js": "^4.4.3",
     "classnames": "^2.5.1",
+    "crypto-js": "^4.2.0",
     "dayjs": "^1.11.11",
     "lodash": "^4.17.21",
     "prop-types": "^15.8.1",
@@ -58,5 +59,10 @@
   "packageManager": "yarn@4.3.1",
   "devDependencies": {
     "eslint-config-react-app": "^7.0.1"
-  }
+  },
+  "description": "이 프로젝트는 React.js와 JSON Server를 이용해 구축한 간단한 쇼핑몰 웹 애플리케이션입니다. 사용자는 상품을 검색하고, 장바구니에 추가하고, 결제할 수 있습니다. 이 프로젝트는 프론트엔드 개발 기술을 시연하기 위해 제작되었습니다.",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
