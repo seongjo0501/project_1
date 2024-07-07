@@ -2,9 +2,7 @@
 import React, { createContext, useContext, useState } from 'react';
 
 // UserContext 생성
-const UserContext = createContext();
-
-export const useUser = () => useContext(UserContext);
+const UserContext = createContext(null);
 
 export const UserProvider = ({ children }) => {
     const [user, setUser] = useState(JSON.parse(localStorage.getItem('user')));
@@ -25,3 +23,5 @@ export const UserProvider = ({ children }) => {
         </UserContext.Provider>
     );
 };
+
+export const useUser = () => useContext(UserContext);

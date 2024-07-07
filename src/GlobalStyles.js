@@ -13,6 +13,12 @@ const GlobalStyles = createGlobalStyle`
         color: #333;
         overflow-x: hidden;
 
+        button {
+            font-family: "Roboto","Noto Sans KR", sans-serif;
+            line-height: 1.3;
+            color: inherit;
+        }
+
         ${mq.maxWidth('tablet')`
             font-size: 16px;
         `}

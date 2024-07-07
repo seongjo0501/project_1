@@ -225,6 +225,18 @@ const HeaderContainer = styled.header`
                     }
                 }
             }
+
+            .logout {
+                display: block;
+                font-weight: 500;
+                font-size: 0.875rem;
+                cursor: pointer;
+
+                &:hover {
+                    color: rgb(49, 130, 246);
+                    font-weight: 600;
+                }
+            }
         }
     }
 

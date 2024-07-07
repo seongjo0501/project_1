@@ -24,7 +24,9 @@ const Header = memo(() => {
         setIsChecked(e.target.checked);
     };
 
-    const handleLogout = () => {
+    const handleLogout = (e) => {
+        e.preventDefault()
+
         logout();
         navigate('/');
     };
@@ -85,7 +87,7 @@ const Header = memo(() => {
                                     <NavLink to="/user/profile">내 정보</NavLink>
                                 </li>
                                 <li>
-                                    <button onClick={handleLogout}>로그아웃</button>
+                                    <em className="logout" onClick={handleLogout}>로그아웃</em>
                                 </li>
                             </>
                         ) : (
