@@ -9,6 +9,8 @@ import MainProduct from './MainProduct';
 import MainNotice from './MainNotice';
 import MainReview from './MainReview';
 
+import Spinner from '../../common/spinner/index';
+
 const MainContainer = styled.main`
     .main-wrap {
         max-width: 1280px;
@@ -35,7 +37,7 @@ const Index = memo(() => {
     const [{ data: noticeData, loading: noticeLoading, error: noticeError }] = useAxios('http://localhost:3001/notice');
     const [{ data: reviewData, loading: reviewLoading, error: reviewError }] = useAxios('http://localhost:3001/review');
 
-    if (productsLoading || noticeLoading || reviewLoading) return <p>Loading...</p>;
+    if (productsLoading || noticeLoading || reviewLoading) return <Spinner/>;
     if (productsError || noticeError || reviewError) return <p>Error!</p>;
 
     return (

@@ -5,6 +5,8 @@ import useAxios from 'axios-hooks';
 
 import styled from 'styled-components';
 
+import Spinner from '../../common/spinner/index';
+
 const ViewContainer = styled.div`
     max-width: 1280px;
     margin: 0 auto;
@@ -173,7 +175,7 @@ const View = memo(() => {
     };
 
 
-    if (bestItemLoading) return; //<p>로딩...</p>;
+    if (bestItemLoading) return <Spinner/>;
     if (bestItemError) return; //<p>에러</p>;
 
     // id에 해당하는 아이템을 찾음

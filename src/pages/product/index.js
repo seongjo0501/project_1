@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom';
 
 import useAxios from 'axios-hooks';
 
+import Spinner from '../../common/spinner/index';
+
 const ProductContainer = styled.div`
     h2 {
         margin-top: 60px;
@@ -91,7 +93,7 @@ const ProductContainer = styled.div`
 const index = memo(() => {
     const [{ data: productData, loading: productLoading, error: productError }] = useAxios('http://localhost:3001/products');
 
-    if (productLoading) return; //<p>로딩...</p>;
+    if (productLoading) return <Spinner/>;
     if (productError) return; //<p>에러</p>;
 
     return (
