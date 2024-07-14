@@ -11,6 +11,7 @@ import MainReview from './MainReview';
 
 import Spinner from '../../common/spinner/index';
 
+
 const MainContainer = styled.main`
     .main-wrap {
         max-width: 1280px;
@@ -29,6 +30,21 @@ const MainContainer = styled.main`
                 font-size: 1.5rem;
             `}
         }
+
+        .main-multi {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+
+            > div {
+                width: calc((100% - 20px) / 2);
+
+                ${mq.maxWidth('tablet')`
+                    flex: none;
+                    width: 100%;
+                `}
+            }
+        }
     }
 `;
 
@@ -39,6 +55,8 @@ const Index = memo(() => {
 
     if (productsLoading || noticeLoading || reviewLoading) return <Spinner/>;
     if (productsError || noticeError || reviewError) return <p>Error!</p>;
+
+    
 
     return (
         <MainContainer>

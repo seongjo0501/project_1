@@ -100,6 +100,7 @@ const Login = () => {
     // 로그인 페이지의 height 조정
     useEffect(() => {
         const wH = window.innerHeight;
+        const bodyWrap = document.querySelector('#body-wrap');
         const footer = document.querySelector('footer');
         const loginWrap = document.querySelector('.login-wrap');
 
@@ -111,6 +112,7 @@ const Login = () => {
             loginWrap.style.cssText = `
                 min-height: ${wH - fH}px;
             `;
+            footer.style.cssText = 'margin-top: 0;'
             // console.log(wH);
             // console.log(fH);
         }

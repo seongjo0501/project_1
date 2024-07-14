@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import mq from '../../MediaQuery';
 
 const FooterContainer = styled.footer`
+    margin-top: 20px;
     border-top: 1px solid #ededed;
 
     .footer-wrap {
